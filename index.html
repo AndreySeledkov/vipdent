@@ -13,7 +13,6 @@
     <div class="top-bar">
         <div class="container top-bar-inner">
             <div class="logo">
-                <!-- сюда потом подставишь свой логотип (SVG/PNG) -->
                 <span class="logo-box">MASYCH<br><span class="logo-sub">clinic</span></span>
             </div>
 
@@ -68,59 +67,50 @@
 </header>
 
 <main>
-    <!-- Hero блок -->
-    <section class="hero">
-        <div class="elementor-element elementor-element-32258a1 e-con-full e-flex e-con e-child" data-id="32258a1" data-element_type="container">
-            <div class="elementor-element elementor-element-7a2792a e-con-full e-flex e-con e-child" data-id="7a2792a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div class="elementor-element elementor-element-c699831 elementor-widget elementor-widget-image" data-id="c699831" data-element_type="widget" data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img width="328" height="450" src="images/IMG_0556.jpg" class="attachment-full size-full wp-image-40532" alt="" srcset="images/IMG_0556.jpg 328w, images/IMG_0556.jpg 219w" sizes="(max-width: 328px) 100vw, 328px">															</div>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-a3fe443 e-con-full e-flex e-con e-child" data-id="a3fe443" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div class="elementor-element elementor-element-c373a74 e-con-full e-flex e-con e-child" data-id="c373a74" data-element_type="container">
-                    <div class="elementor-element elementor-element-8f47ffd elementor-widget__width-inherit elementor-widget elementor-widget-the7-heading" data-id="8f47ffd" data-element_type="widget" data-widget_type="the7-heading.default">
-                        <div class="elementor-widget-container">
-                            <h1 class="the7-heading-title elementor-size-default">ИРЧИК</h1>				</div>
-                    </div>
-                    <div class="elementor-element elementor-element-b96755e elementor-widget-tablet__width-inherit elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-id="b96755e" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                            Головний лікар, хірург, ортопед<br>
-                            Член асоціації імплантологів в Україні								</div>
-                    </div>
-                    <div class="elementor-element elementor-element-46865ee elementor-widget__width-inherit elementor-widget elementor-widget-the7-heading" data-id="46865ee" data-element_type="widget" data-widget_type="the7-heading.default">
-                        <div class="elementor-widget-container">
-                            <div class="the7-heading-title elementor-size-default">Спеціалізація: хірургія</div>				</div>
-                    </div>
-                    <div class="elementor-element elementor-element-6fc5812 elementor-widget__width-inherit elementor-widget elementor-widget-the7-heading" data-id="6fc5812" data-element_type="widget" data-widget_type="the7-heading.default">
-                        <div class="elementor-widget-container">
-                            <div class="the7-heading-title elementor-size-default">Досвід роботи: 15 років</div>				</div>
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-f4b1bfb e-con-full e-flex e-con e-child" data-id="f4b1bfb" data-element_type="container">
-                    <div class="elementor-element elementor-element-fcacc2c elementor-widget-tablet__width-inherit elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-id="fcacc2c" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                            Спеціалізується на імплантації зубів (включно з Straumann, Neodent, DIO), кістковій пластиці, синус-ліфтингу та повному спектрі хірургічних втручань, включаючи видалення зубів мудрості. Також проводить терапевтичне лікування, протезування (E‑Max, циркон, бюгельні конструкції), пародонтологію та сучасну діагностику (3D‑сканування, КТ, цифрові Wax‑up).
 
-                            В роботі використовує інноваційне обладнання та безболісні техніки (седація, закис азоту).								</div>
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-b7bab57 e-con-full e-flex e-con e-child" data-id="b7bab57" data-element_type="container">
-                    <div class="elementor-element elementor-element-2417bcd zolotob elementor-mobile-align-justify elementor-widget-mobile__width-inherit elementor-widget elementor-widget-the7_button_widget" data-id="2417bcd" data-element_type="widget" data-widget_type="the7_button_widget.default">
-                        <div class="elementor-widget-container">
-                            <div class="elementor-button-wrapper"><a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6MzgwMDEsInRvZ2dsZSI6ZmFsc2V9" class="box-button elementor-button elementor-size-xs">Записатися на консультацію</a></div>				</div>
-                    </div>
-                </div>
+    <!-- Блок врача -->
+    <section class="hero hero-doctor">
+        <div class="container hero-doctor-inner">
+
+            <div class="doctor-photo">
+                <img src="images/IMG_0556.jpg" alt="Ірчик – головний лікар клініки MASYCH">
             </div>
+
+            <div class="doctor-info">
+                <h1 class="doctor-name">ІРЧИК</h1>
+
+                <p class="doctor-position">
+                    Головний лікар, хірург, ортопед<br>
+                    Член асоціації імплантологів в Україні
+                </p>
+
+                <p class="doctor-extra">
+                    <strong>Спеціалізація:</strong> хірургія<br>
+                    <strong>Досвід роботи:</strong> 15 років
+                </p>
+
+                <p class="doctor-description">
+                    Спеціалізується на імплантації зубів (включно з Straumann, Neodent, DIO),
+                    кістковій пластиці, синус-ліфтингу та повному спектрі хірургічних втручань,
+                    включаючи видалення зубів мудрості. Також проводить терапевтичне лікування,
+                    протезування (E-Max, циркон, бюгельні конструкції), пародонтологію та сучасну
+                    діагностику (3D-сканування, КТ, цифрові Wax-up). В роботі використовує
+                    інноваційне обладнання та безболісні техніки (седація, закис азоту).
+                </p>
+
+                <a href="#" class="btn-secondary doctor-btn">Записатися на консультацію</a>
+            </div>
+
         </div>
     </section>
 
-    <!-- Заголовок “Наші послуги” -->
+    <!-- Блок "Наші послуги" -->
     <section class="services-intro">
         <div class="container">
             <h2 class="section-title">Наші послуги</h2>
         </div>
     </section>
+
 </main>
 
 </body>
