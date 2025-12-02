@@ -211,7 +211,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(3, 64, 60, 0.65); /* затемнение зеленым */
+    background: rgba(3, 64, 60, 0.65);
 }
 
 .services-dentistry-inner {
@@ -244,8 +244,6 @@ body {
     gap: 24px;
 }
 
-/* Карточки */
-
 .service-card {
     display: flex;
     align-items: center;
@@ -274,8 +272,6 @@ body {
     font-weight: 500;
 }
 
-/* Специальная карточка "Всі послуги" */
-
 .service-card-all {
     background-color: #003533;
     color: #ffffff;
@@ -287,6 +283,197 @@ body {
     font-size: 18px;
 }
 
+/* ---------- ФУТЕР ---------- */
+
+.site-footer {
+    background-color: #0b5953;
+    color: #ffffff;
+    padding: 50px 0 40px;
+    position: relative;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1.1fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.footer-col {
+    font-size: 14px;
+}
+
+.footer-col-brand {
+    max-width: 320px;
+}
+
+.footer-logo-box {
+    display: inline-block;
+    padding: 10px 28px;
+    border: 1px solid #d3b16d;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.footer-text-main {
+    margin: 0 0 16px;
+    line-height: 1.5;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.footer-social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #d3b16d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-small-text {
+    margin: 0 0 18px;
+    line-height: 1.5;
+    font-size: 12px;
+    color: #d6e6e4;
+}
+
+/* рейтинг */
+
+.footer-rating {
+    font-size: 13px;
+}
+
+.footer-rating-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-rating-score {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer-stars {
+    color: #f6b400;
+    letter-spacing: 1px;
+}
+
+.footer-rating-sub {
+    color: #e8f2f1;
+}
+
+.footer-rating-powered {
+    margin-top: 4px;
+}
+
+.google-text {
+    font-weight: 600;
+}
+
+.footer-rating-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: #ffffff;
+    color: #1a73e8;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* колонки ссылок */
+
+.footer-title {
+    margin: 0 0 14px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 6px;
+}
+
+/* контакты */
+
+.footer-col-contacts .footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.footer-contact-icon {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.footer-contact-messengers {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0 16px;
+}
+
+.footer-messenger {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-footer-appointment {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 22px;
+    background-color: #ffffff;
+    color: #0b5953;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* плавающая кнопка звонка */
+
+.floating-call {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #25b7a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #ffffff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+    z-index: 200;
+}
+
 /* ---------- АДАПТИВ ---------- */
 
 @media (max-width: 900px) {
@@ -296,6 +483,10 @@ body {
     }
 
     .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-inner {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
@@ -318,15 +509,19 @@ body {
         padding-bottom: 60px;
     }
 
-    .services-dentistry-left {
-        flex: 0 0 auto;
-    }
-
     .services-title {
         font-size: 32px;
     }
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-col-brand {
+        max-width: none;
     }
 }
