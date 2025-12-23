@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px; /* Висота прилипаючого хедера */
+}
+
 body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -21,6 +26,12 @@ body {
 }
 
 /* ---------- HEADER ---------- */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
 .top-bar {
     background-color: #3d2b1f; /* Коричневий */
@@ -160,6 +171,18 @@ body {
 .horizontal-scroll-section {
     background-color: #3d2b1f; /* Коричневий */
     padding: 20px 0 60px;
+}
+
+.works-section {
+    background-color: #3d2b1f; /* Коричневий */
+    color: #d3b16d; /* Золотий */
+    padding: 60px 0 20px;
+    text-align: center;
+    border-top: 2px solid #d3b16d;
+}
+
+.works-scroll {
+    border-bottom: 2px solid #d3b16d;
 }
 
 .horizontal-scroll-container {
