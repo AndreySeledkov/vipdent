@@ -23,9 +23,10 @@ body {
 /* ---------- HEADER ---------- */
 
 .top-bar {
-    background-color: #032b2c;
+    background-color: #3d2b1f; /* Коричневий */
     color: #f5f5f5;
     font-size: 14px;
+    border-bottom: 1px solid #d3b16d;
 }
 
 .top-bar-inner {
@@ -100,8 +101,8 @@ body {
 .btn-primary {
     display: inline-block;
     padding: 10px 22px;
-    background-color: #f5f3e8;
-    color: #032b2c;
+    background-color: #d3b16d; /* Золотий */
+    color: #3d2b1f; /* Коричневий */
     font-weight: 600;
     border-radius: 2px;
     text-decoration: none;
@@ -110,8 +111,9 @@ body {
 /* ---------- НАВИГАЦИЯ ---------- */
 
 .main-nav {
-    background-color: #115a56;
+    background-color: #2a1d15; /* Темно-коричневий */
     color: #ffffff;
+    border-bottom: 2px solid #d3b16d;
 }
 
 .nav-inner {
@@ -139,10 +141,74 @@ body {
     text-decoration: underline;
 }
 
+/* ---------- НОВІ СЕКЦІЇ (ЗОЛОТИЙ ТА КОРИЧНЕВИЙ) ---------- */
+
+.certificates-section {
+    background-color: #3d2b1f; /* Коричневий */
+    color: #d3b16d; /* Золотий */
+    padding: 60px 0 20px;
+    text-align: center;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.horizontal-scroll-section {
+    background-color: #3d2b1f; /* Коричневий */
+    padding: 20px 0 60px;
+}
+
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Скроллбар для контейнера */
+.horizontal-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-track {
+    background: #2a1d15;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb {
+    background: #d3b16d;
+    border-radius: 4px;
+}
+
+.scroll-item {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 400px;
+    border: 2px solid #d3b16d;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.scroll-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.scroll-item:hover img {
+    transform: scale(1.05);
+}
+
 /* ---------- HERO / ВРАЧ ---------- */
 
 .hero {
-    background-color: #000000;
+    background-color: #3d2b1f; /* Коричневий замість чорного */
     color: #ffffff;
 }
 
@@ -159,6 +225,7 @@ body {
     max-width: 328px;
     width: 100%;
     height: auto;
+    border: 3px solid #d3b16d; /* Золота рамка для фото */
 }
 
 .doctor-info {
@@ -170,6 +237,7 @@ body {
     margin: 0 0 16px;
     font-size: 32px;
     letter-spacing: 2px;
+    color: #d3b16d; /* Золоте ім'я */
 }
 
 .doctor-position,
@@ -184,8 +252,8 @@ body {
 .btn-secondary {
     display: inline-block;
     padding: 12px 28px;
-    background-color: #0ba574;
-    color: #ffffff;
+    background-color: #d3b16d; /* Золотий */
+    color: #3d2b1f; /* Коричневий */
     border-radius: 2px;
     text-decoration: none;
     font-weight: 600;
@@ -205,13 +273,15 @@ body {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    border-top: 2px solid #d3b16d;
+    border-bottom: 2px solid #d3b16d;
 }
 
 .services-dentistry::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(3, 64, 60, 0.65);
+    background: rgba(61, 43, 31, 0.85); /* Коричневий напівпрозорий фон */
 }
 
 .services-dentistry-inner {
@@ -232,6 +302,7 @@ body {
     margin: 0;
     font-size: 40px;
     font-weight: 600;
+    color: #d3b16d; /* Золотий заголовок */
 }
 
 .services-dentistry-right {
@@ -249,9 +320,10 @@ body {
     align-items: center;
     gap: 14px;
     padding: 20px 22px;
-    background-color: #ffffff;
-    color: #062f33;
+    background-color: #f5f3e8; /* Світло-бежевий */
+    color: #3d2b1f; /* Коричневий текст */
     font-size: 16px;
+    border: 1px solid #d3b16d;
 }
 
 .service-card-icon {
@@ -264,7 +336,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    color: #d3b16d;
+    color: #3d2b1f;
     line-height: 1;
 }
 
@@ -273,8 +345,8 @@ body {
 }
 
 .service-card-all {
-    background-color: #003533;
-    color: #ffffff;
+    background-color: #3d2b1f; /* Коричневий */
+    color: #d3b16d; /* Золотий */
     justify-content: center;
 }
 
@@ -286,10 +358,11 @@ body {
 /* ---------- ФУТЕР ---------- */
 
 .site-footer {
-    background-color: #0b5953;
+    background-color: #3d2b1f; /* Коричневий */
     color: #ffffff;
     padding: 50px 0 40px;
     position: relative;
+    border-top: 2px solid #d3b16d;
 }
 
 .footer-inner {
@@ -314,6 +387,7 @@ body {
     font-size: 24px;
     letter-spacing: 2px;
     margin-bottom: 18px;
+    color: #f5f3e8;
 }
 
 .footer-text-main {
@@ -362,6 +436,7 @@ body {
 .footer-rating-score {
     font-weight: 700;
     font-size: 18px;
+    color: #d3b16d; /* Золотий */
 }
 
 .footer-stars {
@@ -386,10 +461,11 @@ body {
     margin-top: 8px;
     padding: 6px 14px;
     border-radius: 999px;
-    background-color: #ffffff;
-    color: #1a73e8;
+    background-color: #d3b16d; /* Золотий */
+    color: #3d2b1f; /* Коричневий */
     font-size: 12px;
     text-decoration: none;
+    font-weight: 600;
 }
 
 /* колонки ссылок */
@@ -398,6 +474,7 @@ body {
     margin: 0 0 14px;
     font-size: 20px;
     font-weight: 600;
+    color: #d3b16d; /* Золотий */
 }
 
 .footer-list {
@@ -422,6 +499,7 @@ body {
 .footer-contact-icon {
     font-size: 16px;
     line-height: 1.4;
+    color: #d3b16d; /* Золоті іконки */
 }
 
 .footer-contact-messengers {
@@ -434,7 +512,7 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 1px solid #ffffff;
+    border: 1px solid #d3b16d; /* Золотий */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -447,8 +525,8 @@ body {
     display: inline-block;
     margin-top: 16px;
     padding: 10px 22px;
-    background-color: #ffffff;
-    color: #0b5953;
+    background-color: #d3b16d; /* Золотий */
+    color: #3d2b1f; /* Коричневий */
     font-weight: 600;
     text-align: center;
     text-decoration: none;
