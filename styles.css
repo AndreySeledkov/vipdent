@@ -152,6 +152,12 @@ body {
     text-decoration: underline;
 }
 
+.section-divider {
+    height: 2px;
+    background-color: #d3b16d; /* Золотий */
+    margin: 0;
+}
+
 /* ---------- НОВІ СЕКЦІЇ (ЗОЛОТИЙ ТА КОРИЧНЕВИЙ) ---------- */
 
 .certificates-section {
