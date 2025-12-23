@@ -578,6 +578,103 @@ body {
     z-index: 200;
 }
 
+/* ---------- КОНТАКТИ (СТОРІНКА) ---------- */
+
+.contacts-page-section {
+    background-color: #2a1d15;
+    padding-bottom: 60px;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.contacts-info-block {
+    background-color: #3d2b1f;
+    padding: 40px;
+    border: 2px solid #d3b16d;
+}
+
+.contacts-info-block h2 {
+    color: #d3b16d;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contacts-info-item {
+    margin-bottom: 24px;
+}
+
+.contacts-info-label {
+    color: #d3b16d;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.contacts-info-value {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contacts-info-value a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contacts-info-value a:hover {
+    text-decoration: underline;
+}
+
+.contact-page-socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.contact-page-social-link {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #d3b16d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-page-social-link:hover {
+    background-color: #d3b16d;
+    color: #3d2b1f;
+}
+
+.contacts-map {
+    border: 2px solid #d3b16d;
+    background-color: #3d2b1f;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contacts-map-placeholder {
+    color: #d3b16d;
+}
+
+.contacts-map-placeholder .icon {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 10px;
+}
+
 /* ---------- АДАПТИВ ---------- */
 
 @media (max-width: 900px) {
@@ -592,6 +689,10 @@ body {
 
     .footer-inner {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contacts-grid {
+        grid-template-columns: 1fr;
     }
 }
 
