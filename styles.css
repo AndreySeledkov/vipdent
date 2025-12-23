@@ -675,6 +675,64 @@ body {
     margin-bottom: 10px;
 }
 
+/* ---------- СТОРІНКА ПОСЛУГИ ---------- */
+
+.service-detail-section {
+    background-color: #3d2b1f;
+    padding: 60px 0 100px;
+}
+
+.service-detail-content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.service-detail-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.service-detail-text p {
+    margin-bottom: 24px;
+}
+
+.service-detail-text ul {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.service-detail-text li {
+    margin-bottom: 12px;
+}
+
+.service-detail-image {
+    flex: 0 0 450px;
+}
+
+.service-detail-image img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #d3b16d;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .service-detail-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .service-detail-image {
+        flex: none;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
 /* ---------- АДАПТИВ ---------- */
 
 @media (max-width: 900px) {
