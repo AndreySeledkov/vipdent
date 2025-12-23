@@ -201,17 +201,28 @@ body {
 }
 
 /* Скроллбар для контейнера */
+.horizontal-scroll-container {
+    scrollbar-width: auto; /* Для Firefox: auto вместо thin, чтобы был заметнее */
+    scrollbar-color: #d3b16d #1a110a; /* Для Firefox */
+}
+
 .horizontal-scroll-container::-webkit-scrollbar {
-    height: 8px;
+    height: 12px; /* Увеличил высоту с 8px */
 }
 
 .horizontal-scroll-container::-webkit-scrollbar-track {
-    background: #241810;
+    background: #1a110a; /* Более темный фон для контраста с золотым скроллом */
+    border-radius: 6px;
 }
 
 .horizontal-scroll-container::-webkit-scrollbar-thumb {
     background: #d3b16d;
-    border-radius: 4px;
+    border-radius: 6px;
+    border: 2px solid #1a110a; /* Добавил рамку вокруг скролла, чтобы он "отделялся" */
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #e5c380; /* Светлее при наведении */
 }
 
 .scroll-item {
