@@ -215,5 +215,68 @@
     </a>
 </footer>
 
+<!-- Модальне вікно для запису -->
+<div id="appointment-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2 class="modal-title">Записатися на прийом</h2>
+        <form class="appointment-form">
+            <div class="form-group">
+                <label for="name">Ваше ім'я</label>
+                <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Номер телефону</label>
+                <input type="tel" id="phone" name="phone" placeholder="+38 (0__) ___ __ __" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Послуга</label>
+                <select id="service" name="service">
+                    <option value="consultation">Консультація</option>
+                    <option value="orthodontics">Ортодонтія</option>
+                    <option value="surgery">Хірургічне лікування</option>
+                    <option value="implantation">Імплантація</option>
+                    <option value="treatment">Лікування зубів</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Повідомлення (необов'язково)</label>
+                <textarea id="message" name="message" rows="3" placeholder="Ваші побажання або симптоми"></textarea>
+            </div>
+            <button type="submit" class="btn-primary submit-btn">Відправити запит</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('appointment-modal');
+        const closeBtn = document.querySelector('.close-button');
+        const appointmentBtns = document.querySelectorAll('.btn-primary, .btn-secondary, .btn-footer-appointment');
+
+        appointmentBtns.forEach(btn => {
+            if (btn.innerText.toLowerCase().includes('записатися') || btn.classList.contains('doctor-btn')) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    modal.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
+                });
+            }
+        });
+
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        window.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    });
+</script>
+
 </body>
 </html>

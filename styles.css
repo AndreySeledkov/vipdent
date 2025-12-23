@@ -788,3 +788,100 @@ body {
         max-width: none;
     }
 }
+/* ---------- МОДАЛЬНЕ ВІКНО ---------- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #3d2b1f; /* Коричневий */
+    margin: 10% auto;
+    padding: 40px;
+    border: 2px solid #d3b16d; /* Золотий */
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.close-button {
+    color: #d3b16d;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #ffffff;
+}
+
+.modal-title {
+    color: #d3b16d;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.appointment-form .form-group {
+    margin-bottom: 20px;
+}
+
+.appointment-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d3b16d;
+    font-size: 14px;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a1d15;
+    border: 1px solid #d3b16d;
+    color: #ffffff;
+    font-family: inherit;
+    border-radius: 2px;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e5c380;
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        margin: 20% auto;
+        padding: 25px;
+    }
+}
