@@ -34,10 +34,10 @@ body {
 }
 
 .top-bar {
-    background-color: #3d2b1f; /* Коричневий */
+    background-color: #241810; /* Коричневий */
     color: #f5f5f5;
     font-size: 14px;
-    border-bottom: 1px solid #d3b16d;
+    border-bottom: 2px solid #d3b16d;
 }
 
 .top-bar-inner {
@@ -53,7 +53,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 6px 18px;
-    border: 1px solid #d3b16d;
+    border: 2px solid #d3b16d;
     font-size: 22px;
     letter-spacing: 2px;
     color: #f5f3e8;
@@ -113,7 +113,7 @@ body {
     display: inline-block;
     padding: 10px 22px;
     background-color: #d3b16d; /* Золотий */
-    color: #3d2b1f; /* Коричневий */
+    color: #241810; /* Коричневий */
     font-weight: 600;
     border-radius: 2px;
     text-decoration: none;
@@ -122,7 +122,7 @@ body {
 /* ---------- НАВИГАЦИЯ ---------- */
 
 .main-nav {
-    background-color: #2a1d15; /* Темно-коричневий */
+    background-color: #241810; /* Темно-коричневий */
     color: #ffffff;
     border-bottom: 2px solid #d3b16d;
 }
@@ -161,7 +161,7 @@ body {
 /* ---------- НОВІ СЕКЦІЇ (ЗОЛОТИЙ ТА КОРИЧНЕВИЙ) ---------- */
 
 .certificates-section {
-    background-color: #3d2b1f; /* Коричневий */
+    background-color: #241810; /* Коричневий */
     color: #d3b16d; /* Золотий */
     padding: 60px 0 20px;
     text-align: center;
@@ -175,12 +175,12 @@ body {
 }
 
 .horizontal-scroll-section {
-    background-color: #3d2b1f; /* Коричневий */
+    background-color: #241810; /* Коричневий */
     padding: 20px 0 60px;
 }
 
 .works-section {
-    background-color: #3d2b1f; /* Коричневий */
+    background-color: #241810; /* Коричневий */
     color: #d3b16d; /* Золотий */
     padding: 60px 0 20px;
     text-align: center;
@@ -206,7 +206,7 @@ body {
 }
 
 .horizontal-scroll-container::-webkit-scrollbar-track {
-    background: #2a1d15;
+    background: #241810;
 }
 
 .horizontal-scroll-container::-webkit-scrollbar-thumb {
@@ -237,7 +237,7 @@ body {
 /* ---------- HERO / ВРАЧ ---------- */
 
 .hero {
-    background-color: #3d2b1f; /* Коричневий замість чорного */
+    background-color: #241810; /* Коричневий замість чорного */
     color: #ffffff;
 }
 
@@ -254,7 +254,7 @@ body {
     max-width: 328px;
     width: 100%;
     height: auto;
-    border: 3px solid #d3b16d; /* Золота рамка для фото */
+    border: 2px solid #d3b16d; /* Золота рамка для фото */
 }
 
 .doctor-info {
@@ -282,7 +282,7 @@ body {
     display: inline-block;
     padding: 12px 28px;
     background-color: #d3b16d; /* Золотий */
-    color: #3d2b1f; /* Коричневий */
+    color: #241810; /* Коричневий */
     border-radius: 2px;
     text-decoration: none;
     font-weight: 600;
@@ -347,9 +347,9 @@ body {
     gap: 14px;
     padding: 20px 22px;
     background-color: #f5f3e8; /* Світло-бежевий */
-    color: #3d2b1f; /* Коричневий текст */
+    color: #241810; /* Коричневий текст */
     font-size: 16px;
-    border: 1px solid #d3b16d;
+    border: 2px solid #d3b16d;
 }
 
 .service-card-icon {
@@ -362,7 +362,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    color: #3d2b1f;
+    color: #241810;
     line-height: 1;
 }
 
@@ -371,7 +371,7 @@ body {
 }
 
 .service-card-all {
-    background-color: #3d2b1f; /* Коричневий */
+    background-color: #241810; /* Коричневий */
     color: #d3b16d; /* Золотий */
     justify-content: center;
 }
@@ -384,7 +384,7 @@ body {
 /* ---------- ФУТЕР ---------- */
 
 .site-footer {
-    background-color: #3d2b1f; /* Коричневий */
+    background-color: #241810; /* Коричневий */
     color: #ffffff;
     padding: 50px 0 40px;
     position: relative;
@@ -409,7 +409,7 @@ body {
 .footer-logo-box {
     display: inline-block;
     padding: 10px 28px;
-    border: 1px solid #d3b16d;
+    border: 2px solid #d3b16d;
     font-size: 24px;
     letter-spacing: 2px;
     margin-bottom: 18px;
@@ -431,7 +431,7 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 6px;
-    border: 1px solid #d3b16d;
+    border: 2px solid #d3b16d;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -488,7 +488,7 @@ body {
     padding: 6px 14px;
     border-radius: 999px;
     background-color: #d3b16d; /* Золотий */
-    color: #3d2b1f; /* Коричневий */
+    color: #241810; /* Коричневий */
     font-size: 12px;
     text-decoration: none;
     font-weight: 600;
@@ -538,7 +538,7 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 1px solid #d3b16d; /* Золотий */
+    border: 2px solid #d3b16d; /* Золотий */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -552,7 +552,7 @@ body {
     margin-top: 16px;
     padding: 10px 22px;
     background-color: #d3b16d; /* Золотий */
-    color: #3d2b1f; /* Коричневий */
+    color: #241810; /* Коричневий */
     font-weight: 600;
     text-align: center;
     text-decoration: none;
@@ -581,7 +581,7 @@ body {
 /* ---------- КОНТАКТИ (СТОРІНКА) ---------- */
 
 .contacts-page-section {
-    background-color: #2a1d15;
+    background-color: #241810;
     padding-bottom: 60px;
 }
 
@@ -593,7 +593,7 @@ body {
 }
 
 .contacts-info-block {
-    background-color: #3d2b1f;
+    background-color: #241810;
     padding: 40px;
     border: 2px solid #d3b16d;
 }
@@ -640,7 +640,7 @@ body {
 .contact-page-social-link {
     width: 44px;
     height: 44px;
-    border: 1px solid #d3b16d;
+    border: 2px solid #d3b16d;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -651,12 +651,12 @@ body {
 
 .contact-page-social-link:hover {
     background-color: #d3b16d;
-    color: #3d2b1f;
+    color: #241810;
 }
 
 .contacts-map {
     border: 2px solid #d3b16d;
-    background-color: #3d2b1f;
+    background-color: #241810;
     min-height: 400px;
     display: flex;
     align-items: center;
@@ -678,7 +678,7 @@ body {
 /* ---------- СТОРІНКА ПОСЛУГИ ---------- */
 
 .service-detail-section {
-    background-color: #3d2b1f;
+    background-color: #241810;
     padding: 60px 0 100px;
 }
 
@@ -715,7 +715,7 @@ body {
 .service-detail-image img {
     width: 100%;
     height: auto;
-    border: 3px solid #d3b16d;
+    border: 2px solid #d3b16d;
     display: block;
 }
 
@@ -804,7 +804,7 @@ body {
 }
 
 .modal-content {
-    background-color: #3d2b1f; /* Коричневий */
+    background-color: #241810; /* Коричневий */
     margin: 10% auto;
     padding: 40px;
     border: 2px solid #d3b16d; /* Золотий */
@@ -852,8 +852,8 @@ body {
 .appointment-form textarea {
     width: 100%;
     padding: 12px;
-    background-color: #2a1d15;
-    border: 1px solid #d3b16d;
+    background-color: #241810;
+    border: 2px solid #d3b16d;
     color: #ffffff;
     font-family: inherit;
     border-radius: 2px;
