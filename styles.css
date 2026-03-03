@@ -677,13 +677,23 @@ body {
 }
 
 .contacts-map-placeholder {
-    color: #d3b16d;
+    width: 100%;
+    min-height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.contacts-map-placeholder .icon {
-    font-size: 50px;
+.contacts-map-placeholder iframe {
     display: block;
-    margin-bottom: 10px;
+    width: 100%;
+    min-height: 400px;
+    filter: grayscale(20%) contrast(1.05);
+    transition: filter 0.4s ease;
+}
+
+.contacts-map-placeholder iframe:hover {
+    filter: grayscale(0%) contrast(1);
 }
 
 /* ---------- СТОРІНКА ПОСЛУГИ ---------- */
