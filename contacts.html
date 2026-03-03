@@ -13,15 +13,16 @@
     <div class="top-bar">
         <div class="container top-bar-inner">
             <div class="logo">
-                <span class="logo-box">MASYCH<br><span class="logo-sub">clinic</span></span>
+                <span class="logo-box">VipDent<br><span class="logo-sub">clinic</span></span>
             </div>
 
             <div class="top-info">
                 <div class="top-item">
                     <span class="icon">📍</span>
                     <div class="top-text">
-                        <div>м. Івано-Франківськ,</div>
-                        <div>вулиця Бельведерська, 25А</div>
+                        <div>Чернівецька обл,</div>
+                        <div>м. Сторожинець,</div>
+                        <div>вул Соборна, 11-б</div>
                     </div>
                 </div>
 
@@ -29,14 +30,13 @@
                     <span class="icon">🕒</span>
                     <div class="top-text">
                         <div>Пн–Пт: 09:00–18:00</div>
-                        <div>Сб: 09:00–15:00</div>
                     </div>
                 </div>
 
                 <div class="top-item phone-item">
                     <span class="icon">📱</span>
-                    <a href="tel:+380671304827" class="phone">
-                        +38 (067) 130 48 27
+                    <a href="tel:+380671784890" class="phone">
+                        +38 (067) 178 48 90
                     </a>
                 </div>
 
@@ -51,9 +51,9 @@
     <nav class="main-nav">
         <div class="container nav-inner">
             <ul class="nav-menu">
-                <li><a href="index.html#about-us">Про нас ▾</a></li>
-                <li><a href="index.html#dentistry">Стоматологія ▾</a></li>
-                <li><a href="index.html#our-works">Наші роботи ▾</a></li>
+                <li><a href="#about-us">Про нас ▾</a></li>
+                <li><a href="#dentistry">Стоматологія ▾</a></li>
+                <li><a href="#our-works">Наші роботи ▾</a></li>
                 <li><a href="contacts.html">Контакти</a></li>
             </ul>
         </div>
@@ -114,14 +114,20 @@
         <!-- Колонка бренда -->
         <div class="footer-col footer-col-brand">
             <div class="footer-logo-box">
-                MASYCH<br><span class="logo-sub">clinic</span>
+                VipDent<br><span class="logo-sub">clinic</span>
             </div>
 
             <p class="footer-text-main">
                 Весь спектр стоматологічних<br>
-                та косметологічних послуг в<br>
-                центрі Івано-Франківська
+                в<br>
+                Сторожинець
             </p>
+
+            <div class="footer-socials">
+                <a href="#" class="footer-social-icon">IG</a>
+                <a href="#" class="footer-social-icon">FB</a>
+                <a href="#" class="footer-social-icon">YT</a>
+            </div>
 
             <p class="footer-small-text">
                 Реєстраційне досьє від 04.10.2018 №02/0410-М<br>
@@ -157,20 +163,33 @@
 
             <div class="footer-contact-item">
                 <span class="footer-contact-icon">📱</span>
-                <span>+38 (067) 130 48 27</span>
+                <span>+38 067 534 62 75</span>
+            </div>
+            <div class="footer-contact-item">
+                <span class="footer-contact-icon">📱</span>
+                <span>+38 050 751 69 37</span>
+            </div>
+
+            <div class="footer-contact-messengers">
+                <a href="#" class="footer-messenger">TG</a>
+                <a href="#" class="footer-messenger">Vb</a>
+                <a href="#" class="footer-messenger">WA</a>
+            </div>
+
+            <div class="footer-contact-item">
+                <span class="footer-contact-icon">✉️</span>
+                <span>masychv@gmail.com</span>
             </div>
 
             <div class="footer-contact-item">
                 <span class="footer-contact-icon">📍</span>
-                <span>Чернівецька обл, м.Сторожинець,<br>вул.Соборна 11-б</span>
+                <span>Чернівецька обл, м.Сторожинець <br>вул.Соборна 11-б</span>
             </div>
 
             <div class="footer-contact-item">
                 <span class="footer-contact-icon">🕒</span>
                 <span>
                     Пн–Пт: 09:00–18:00<br>
-                    Сб: 09:00–15:00<br>
-                    Нд: вихідний
                 </span>
             </div>
 
@@ -230,7 +249,7 @@
                 btn.addEventListener('click', function(e) {
                     e.preventDefault();
                     modal.style.display = 'block';
-                    document.body.style.overflow = 'hidden';
+                    document.body.style.overflow = 'hidden'; // Заборонити прокрутку фону
                 });
             }
         });
