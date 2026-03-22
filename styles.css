@@ -227,7 +227,6 @@ body {
 
 .scroll-item {
     flex: 0 0 auto;
-    width: 240px;
     height: 320px;
     border: 2px solid #d3b16d;
     overflow: hidden;
@@ -235,13 +234,14 @@ body {
 }
 
 .scroll-item img {
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
 
 .work-item img {
+    width: 240px; /* Keep consistent width for work items if needed, or omit for same auto-width */
     object-fit: cover;
 }
 
@@ -814,7 +814,6 @@ body {
     }
 
     .scroll-item {
-        width: 200px;
         height: 270px;
     }
 }
