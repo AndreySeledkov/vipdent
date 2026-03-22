@@ -163,14 +163,13 @@ body {
 .certificates-section {
     background-color: #241810; /* Коричневий */
     color: #d3b16d; /* Золотий */
-    padding: 60px 0 20px;
+    padding: 30px 0 0px;
     text-align: center;
 }
 
 .section-title {
     margin: 0;
     font-size: 36px;
-    text-transform: uppercase;
     letter-spacing: 2px;
 }
 
