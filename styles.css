@@ -181,7 +181,7 @@ body {
 .works-section {
     background-color: #241810; /* Коричневий */
     color: #d3b16d; /* Золотий */
-    padding: 60px 0 20px;
+    padding: 40px 0 0px;
     text-align: center;
     border-top: 2px solid #d3b16d;
 }
@@ -334,7 +334,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding: 60px 0 80px;
+    padding: 20px 0 60px;
 }
 
 .services-title {
